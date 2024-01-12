@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Mirror</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="block">
+    <button href="#" data-modal-open class="ask question">Я ль на свете всех милее, всех румяней и белее?</button>
+  </div>
+  <br>
+
+  <div data-modal class="backdrop backdrop--is-hidden">
+    <div class="mirror-wrapper">
+      <button data-modal-close class="button-close mirror__button-close">
+        Спасибо зеркальце!
+      </button>
+
+      <div class="mirror">
+        <img src="./images/mirror-frame535.png" alt="mirror frame" class="mirror__frame">
+      </div>
+      <p class="mirror__text">Ты, конечно, спору нет!</p>
+      <div class="mirror__background"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
